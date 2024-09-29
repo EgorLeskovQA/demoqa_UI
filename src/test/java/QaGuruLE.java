@@ -26,7 +26,6 @@ public class QaGuruLE {
         $(".custom-control-label").click();
         $("#userNumber").setValue("1111111111");
         $("#dateOfBirthInput").setValue("13.08.2000");
-        $("#userNumber").setValue("1111111111");
         $("#dateOfBirthInput").sendKeys(Keys.CONTROL + "A");
         $("#dateOfBirthInput").sendKeys("13.08.2000");
         $("#dateOfBirthInput").pressEnter();
