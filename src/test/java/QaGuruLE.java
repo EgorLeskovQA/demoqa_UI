@@ -25,12 +25,12 @@ public class QaGuruLE {
         $("#userEmail").setValue("1111@111.ru");
         $(".custom-control-label").click();
         $("#userNumber").setValue("1111111111");
-        $("#dateOfBirthInput").setValue("13.08.2000");
-        $("#dateOfBirthInput").sendKeys(Keys.CONTROL + "A");
-        $("#dateOfBirthInput").sendKeys("13.08.2000");
-        $("#dateOfBirthInput").pressEnter();
+        $("#dateOfBirthInput").click();
+        $(".react-datepicker__year-select").$("option[value='2000']").click();
+        $(".react-datepicker__month-select").$("option[value='7']").click();
+        $(".react-datepicker__day--013").click();
         $("#subjectsInput").setValue("E").pressEnter();
-        $(byText("Sports")).click();
+        $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#uploadPicture").uploadFromClasspath("tst.jpg");
         $("#currentAddress").setValue("Kutuzovskaya");
         $("#react-select-3-input").setValue("NCR").pressEnter();
@@ -41,7 +41,7 @@ public class QaGuruLE {
         $(".table-responsive").shouldHave(text("1111@111.ru"));
         $(".table-responsive").shouldHave(text("Male"));
         $(".table-responsive").shouldHave(text("1111111111"));
-        $(".table-responsive").shouldHave(text("13 September,2024"));
+        $(".table-responsive").shouldHave(text("13 August,2000"));
         $(".table-responsive").shouldHave(text("English"));
         $(".table-responsive").shouldHave(text("Sport"));
         $(".table-responsive").shouldHave(text("tst.jpg"));
