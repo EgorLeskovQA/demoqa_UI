@@ -74,7 +74,7 @@ public class QaGuruLE extends TestBase{
     }
 
     @Test
-    void NegativeFormTest() {
+    void negativeFormTest() {
         qaGuruPage.openPage()
                 .removeBanner()
                 .setUserNumber(negativeUserNumber)
